@@ -1,15 +1,16 @@
+import React from 'react';
+import Route from './components/Route';
+import Register from './containers/Register';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-12">
-          <h1>Hello React and boostrap</h1>
-        </div>
-      </div>
-    </div>
-  );
+    <div>
+      <Route path='/register'>
+        <Register />
+      </Route>
+    </div>);
 }
 
 export default App;
